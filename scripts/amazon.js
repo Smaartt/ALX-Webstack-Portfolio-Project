@@ -70,6 +70,8 @@ function updateCartQuantity() {
   document.querySelector(".js-cart-quantity").innerHTML = cartQuantity;
 }
 
+updateCartQuantity();
+
 function added(addedMessage) {
   addedMessage.classList.add("added-to-cart-active");
   setTimeout(() => {
