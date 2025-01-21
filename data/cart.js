@@ -63,7 +63,7 @@ export function calculateCartQuantity() {
 export function updateQuantity(productId, newQuantity) {
   let matchingItem;
 
-  if (!(newQuantity > 1) || !(newQuantity <= 100)) {
+  if (!(newQuantity >= 1) || !(newQuantity <= 100)) {
     alert("Quantity must be a number from 1 to 100");
     return;
   }
